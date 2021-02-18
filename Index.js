@@ -4,12 +4,15 @@ var createHandler = require('github-webhook-handler')
 var handler = createHandler({ path: '/webhook', secret: 'myhashsecret' })
 const port = 3000
 
-
 app.post('/webhost', (req, res, event) => {
-  handler(req, res, (err)=> {
+  handler(req, res, function(err) {
     res.statusCode = 404
     res.end('no such location')
   })
+})
+
+handler.on('error', function (err) {
+  console.error('Error:', err.message)
 })
 
 handler.on('push', function (event) {
