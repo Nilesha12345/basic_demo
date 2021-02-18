@@ -16,13 +16,13 @@ handler.on('error', function (err) {
 })
 
 handler.on('push', function (event) {
-  console.log("Repo Name : ",event.payload.repository.name)
-  console.log("Repo full name : ",event.payload.repository.full_name)
-  // console.log("Repo owner Name : ",event.payload.repository.owner.name)
-  // console.log("Repo URL : ",event.payload.html_url)
-  // console.log("Repo Master branchName : ",event.payload.master_branch)
-  // console.log("Pusher Name : ",event.payload.pusher.name)
-  console.log("sender name : ",event.payload.login)
+  // console.log("Repo Name : ",event.payload.repository.name)
+  // console.log("Repo full name : ",event.payload.repository.full_name)
+  // // console.log("Repo owner Name : ",event.payload.repository.owner.name)
+  // // console.log("Repo URL : ",event.payload.html_url)
+  // // console.log("Repo Master branchName : ",event.payload.master_branch)
+  // // console.log("Pusher Name : ",event.payload.pusher.name)
+  // console.log("sender name : ",event.payload.login)
 })
 
 app.get('/', (req, res) => {
