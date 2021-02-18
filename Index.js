@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 var createHandler = require('github-webhook-handler')
-var handler = createHandler();
+var handler = createHandler({ path: '/webhost', secret: 'myhashsecret' })
 const port = 3000
 
 app.post('/webhost', (req, res, event) => {
