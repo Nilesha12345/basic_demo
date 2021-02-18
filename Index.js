@@ -11,9 +11,9 @@ app.post('/webhost', (req, res, event) => {
   })
 })
 
-handler.on('error', function (err) {
-  console.error('Error:', err.message)
-})
+// handler.on('error', function (err) {
+//   console.error('Error:', err.message)
+// })
 
 handler.on('push', function (event) {
   // console.log("Repo Name : ",event.payload.repository.name)
