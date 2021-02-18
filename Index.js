@@ -10,13 +10,9 @@ app.post('/webhost', (req, res, event) => {
     res.statusCode = 404
     res.end('no such location')
   })
-  res.send(200);
 })
 
 handler.on('push', function (event) {
-  // console.log('Received a push event for %s to %s',
-  //   event.payload.repository.name,
-  //   event.payload.ref)
   console.log("Repo Name : ",event.payload.repository.name)
   console.log("Repo full name : ",event.payload.repository.full_name)
   console.log("Repo owner Name : ",event.payload.repository.owner.name)
