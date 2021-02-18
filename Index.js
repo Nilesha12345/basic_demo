@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 app.post('/webhost', (req, res) => {
-	console.log("Repo Name : ",req.repository.name)
+	console.log("Repo Name :",req.repository.name)
   console.log("Repo full name : ",req.repository.full_name)
   console.log("Repo owner Name : ",req.repository.owner.name)
   console.log("Repo URL : ",req.html_url)
