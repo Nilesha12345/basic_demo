@@ -49,11 +49,11 @@ var github = githubhook({/* options */
 
 // listen to push on github on branch master
 github.on('push', function (repo, ref, data) {
-  console.log("Repo Name : ", data.repository.name)
-  console.log("Repo full name : ",data.repository.full_name)
-  console.log("Repo owner Name : ", data.repository.owner.name)
-  console.log("Repo URL : ", data.repository.html_url)
-  console.log("Repo Master branchName : ",data.repository.master_branch)
+  // console.log("Repo Name : ", data.repository.name)
+  // console.log("Repo full name : ",data.repository.full_name)
+  // console.log("Repo owner Name : ", data.repository.owner.name)
+  // console.log("Repo URL : ", data.repository.html_url)
+  // console.log("Repo Master branchName : ",data.repository.master_branch)
   console.log("Pusher Name : ", data.pusher.name)
 });
 
