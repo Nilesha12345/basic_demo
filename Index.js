@@ -54,7 +54,7 @@ github.on('push', function (repo, ref, data) {
   // console.log("Repo owner Name : ", data.repository.owner.name)
   // console.log("Repo URL : ", data.repository.html_url)
   // console.log("Repo Master branchName : ",data.repository.master_branch)
-  console.log("Pusher Name : ", data.pusher.name)
+  // console.log("Pusher Name : ", data.pusher.name)
 });
 
 // listen to github push
